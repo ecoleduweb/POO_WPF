@@ -72,11 +72,18 @@ gridNoms.Children.Add(tbNom);
 
 Tu dois ajouter un maximum de 10 noms et ils ne doivent pas s'empiler les uns sur les autres.
 
+BONUS
+
+- L'ajout de nom fonctionne aussi avec la touche retour de ton clavier.
+- Le champ texte est vidé lorsqu'un nom est ajouté.
+
 ### Exercice 4. Devine le chiffre.
 
 #### But de l'exercice
 
 Assimiler tous les concepts vus jusqu'à présent et Créer une interface pour jouer à devine le chiffre avec une interface.
+
+Je t'invite aussi à aller voir le menu! Assures-toi de comprendre comment il fonctionne.
 
 #### Ce que tu dois faire
 
@@ -106,3 +113,4 @@ Voici quelques captures d'écran pour t'aider.
 BONUS : 
 - Au lieu d'utiliser margin, ajoute les boutons à un élément grid.
 - Disable le bouton quan tu clics dessus. Attention! Tu dois les remettre en fonction quand la partie redémarre!
+- Faire fonctionner le menu.

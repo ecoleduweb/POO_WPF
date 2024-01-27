@@ -1,6 +1,4 @@
 ﻿using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Input;
 
 namespace ListeDeNoms
 {
@@ -9,10 +7,6 @@ namespace ListeDeNoms
     /// </summary>
     public partial class MainWindow : Window
     {
-        int MaxNumberOfNames = 10;
-        int CurrentTopMargin = 0;
-        int CurrentNumberOfNames = 0;
-
         public MainWindow()
         {
             InitializeComponent();
@@ -20,12 +14,7 @@ namespace ListeDeNoms
 
         void OnEdtNomKeyDown(object sender, EventArgs e)
         {
-            // Le faire avec l'étudiant
-            if ((e as KeyEventArgs).Key == Key.Enter)
-            {
-                string name = (sender as TextBox).Text;
-                AddName(name);
-            }
+            // Comment on ajoute un évènement en xaml?
         }
 
         void OnBtnAddNameClick(object sender, EventArgs e)
@@ -36,25 +25,8 @@ namespace ListeDeNoms
         // Avoir un message box qui montre le nom
         void AddName(string name)
         {
-            if (CurrentNumberOfNames >= MaxNumberOfNames)
-            {
-                MessageBox.Show("Trop de noms");
-            }
-            else
-            {
-                var tbNom = new TextBlock();
-                tbNom.Margin = new Thickness(100, CurrentTopMargin, 0, 0);
-                tbNom.TextWrapping = TextWrapping.Wrap;
-                tbNom.FontSize = 12;
-                tbNom.VerticalAlignment = VerticalAlignment.Top;
-                tbNom.HorizontalAlignment = HorizontalAlignment.Left;
-                tbNom.Text = name;
-                gridNoms.Children.Add(tbNom);
+            MessageBox.Show(name);
 
-                CurrentTopMargin+=12;
-                CurrentNumberOfNames++;
-            }
         }
     }
-
 }
