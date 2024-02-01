@@ -43,13 +43,15 @@ Crée le drapeau de la France! Et dans le drapeau de la France, tu dois ajouter 
 Voici un exemple : 
 ![Image Drapeau](./Exercice2.png)
 
-Pour t'aider, tu dois utiliser
-- `Grid.row`
-- `Grid.Column`
+Pour t'aider, tu dois utiliser (dans la colonne bleue)
 - `HorizontalAlignment`
 - `VerticalAlignment`
+
+Et dans la colonne rouge, tu dois utiliser
+- `Grid.row`
+- `Grid.Column`
 - Les grids dans les grids.
-- T'assurer que l'ordre des éléments ne soit pas problématique!
+Assures-toi que l'ordre des éléments n'est pas problématique!
 
 ### Exercice 3. Ajouter un nom.
 
