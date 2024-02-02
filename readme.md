@@ -83,7 +83,7 @@ BONUS
 
 #### But de l'exercice
 
-Assimiler tous les concepts vus jusqu'à présent et Créer une interface pour jouer à devine le chiffre avec une interface.
+Assimiler tous les concepts vus jusqu'à présent et créer une interface pour jouer à devine le chiffre.
 
 Je t'invite aussi à aller voir le menu! Assures-toi de comprendre comment il fonctionne.
 
@@ -91,7 +91,7 @@ Je t'invite aussi à aller voir le menu! Assures-toi de comprendre comment il fo
 
 Créer une interface qui permet de jouter à devnine le chiffre avec des boutons de 1 à 20.
 
-Tu dois ajouter les boutons à ton interface avec le code.
+Tu dois ajouter les boutons à ton interface avec le code c# (PAS EN XML).
 
 Pour ajouter un évènement click sur un bouton, tu peux utiliser ce bout de code. 
 
