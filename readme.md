@@ -103,8 +103,10 @@ Pour ajouter un évènement click sur un bouton, tu peux utiliser ce bout de cod
 ```C# 
 void OnBtnNumberClick(object sender, RoutedEventArgs e) 
 {
-  // pour accéder au label dans le bouton
-  string labelDuBouton = (Button)sender).Content.ToString();
+  if (sender is Button button)
+  {
+    MessageBox.Show(button.Content.ToString());
+  }
 }
 ```
 Voici les flèches si tu veux les utiliser : `↓` `↑`
