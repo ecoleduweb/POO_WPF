@@ -92,6 +92,7 @@ Je t'invite aussi à aller voir le menu! Assures-toi de comprendre comment il fo
 Créer une interface qui permet de jouter à devnine le chiffre avec des boutons de 1 à 20.
 
 Tu dois ajouter les boutons à ton interface avec le code c# (PAS EN XML).
+Aides-toi de l'exercice précédent pour ajouter 20 boutons. Tu ne dois pas ajouter colonnes dans la grid, tu dois seulement utiliser margin.
 
 Pour ajouter un évènement click sur un bouton, tu peux utiliser ce bout de code. 
 
