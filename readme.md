@@ -43,13 +43,15 @@ Crée le drapeau de la France! Et dans le drapeau de la France, tu dois ajouter 
 Voici un exemple : 
 ![Image Drapeau](./Exercice2.png)
 
-Pour t'aider, tu dois utiliser
-- `Grid.row`
-- `Grid.Column`
+Pour t'aider, tu dois utiliser (dans la colonne bleue)
 - `HorizontalAlignment`
 - `VerticalAlignment`
+
+Et dans la colonne rouge, tu dois utiliser
+- `Grid.row`
+- `Grid.Column`
 - Les grids dans les grids.
-- T'assurer que l'ordre des éléments ne soit pas problématique!
+Assures-toi que l'ordre des éléments n'est pas problématique!
 
 ### Exercice 3. Ajouter un nom.
 
@@ -81,7 +83,7 @@ BONUS
 
 #### But de l'exercice
 
-Assimiler tous les concepts vus jusqu'à présent et Créer une interface pour jouer à devine le chiffre avec une interface.
+Assimiler tous les concepts vus jusqu'à présent et créer une interface pour jouer à devine le chiffre.
 
 Je t'invite aussi à aller voir le menu! Assures-toi de comprendre comment il fonctionne.
 
@@ -89,7 +91,8 @@ Je t'invite aussi à aller voir le menu! Assures-toi de comprendre comment il fo
 
 Créer une interface qui permet de jouter à devnine le chiffre avec des boutons de 1 à 20.
 
-Tu dois ajouter les boutons à ton interface avec le code.
+Tu dois ajouter les boutons à ton interface avec le code c# (PAS EN XML).
+Aides-toi de l'exercice précédent pour ajouter 20 boutons. Tu ne dois pas ajouter colonnes dans la grid, tu dois seulement utiliser margin.
 
 Pour ajouter un évènement click sur un bouton, tu peux utiliser ce bout de code. 
 
@@ -100,8 +103,10 @@ Pour ajouter un évènement click sur un bouton, tu peux utiliser ce bout de cod
 ```C# 
 void OnBtnNumberClick(object sender, RoutedEventArgs e) 
 {
-  // pour accéder au label dans le bouton
-  string labelDuBouton = (Button)sender).Content.ToString();
+  if (sender is Button button)
+  {
+    MessageBox.Show(button.Content.ToString());
+  }
 }
 ```
 Voici les flèches si tu veux les utiliser : `↓` `↑`
